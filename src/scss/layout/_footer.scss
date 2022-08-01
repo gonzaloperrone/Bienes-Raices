@@ -1,0 +1,20 @@
+.footer {
+    padding: calc($margin / 2) 0;
+    background-color: $darkGrey;
+    margin-bottom: 0;
+
+    .footerContainer {
+        padding-top: calc($margin / 2);
+    }
+
+    .nav {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+    .copyright {
+        color: $white;
+        text-align: center;
+    }
+}

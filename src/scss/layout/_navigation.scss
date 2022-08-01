@@ -1,0 +1,96 @@
+.rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+        align-items: flex-end;
+    }
+
+    .darkModeBtn {
+        width: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+            filter: invert(90%);
+        }
+
+        @include tablet {
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    img {
+        margin-bottom: 2rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.nav {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease-in-out, opacity 0.5s linear, height 0.5s linear;
+    height: 0;
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+
+        @include tablet {
+            margin-right: 2rem;
+            font-size: 1.8rem;
+            visibility: visible;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*Mobile Menu*/
+.mobileMenu {
+    @include tablet {
+        display: none;
+    }
+
+    img {
+        width: 5rem;
+    }
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

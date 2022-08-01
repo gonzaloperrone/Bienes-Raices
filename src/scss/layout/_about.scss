@@ -1,0 +1,13 @@
+.aboutContent {
+    @include tablet {
+        @include grid(2, 2rem);
+        align-items: center;
+    }
+}
+
+.aboutText blockquote {
+    font-weight: $blackFont;
+    font-size: 2.2rem;
+    margin: 3rem 0 0 0;
+    padding: 1rem 0 3rem 0;
+}

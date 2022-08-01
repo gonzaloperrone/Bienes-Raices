@@ -1,0 +1,12 @@
+.section {
+    margin-top: calc($margin / 2);
+    margin-bottom: calc($margin / 2);
+}
+.contentCenter {
+    max-width: 80rem;
+}
+
+.rigthAlign {
+    display: flex;
+    justify-content: flex-end;
+}
